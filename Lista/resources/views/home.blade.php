@@ -2,15 +2,15 @@
 
 @if(count($lista) > 0)
     <ul>
-        @foreach($lista as $item)
-            <li>{{ $item-> item }}</li>     <!-- ultillizando 'foreach' para mostrar os registros do banco de dados na tela -->
+        @foreach($lista as $item)     <!-- ultillizando 'foreach' para 'mostrar' e 'deletar' os registros do banco de dados na tela -->
+            <li>{{ $item-> item }} - <a href = "delete/{{ $item-> id }}">[x]</a></li>
         @endforeach
     </ul>
 @else
     <h4>Não há itens</h4>
 @endif
 
-<hr>
+<hr/>
 
 <form method = "POST">      <!-- formúlario para 'adiçionar' itens na lista -->
     {{ csrf_field() }}<!-- é um sistema de proteção contra ataques de 'falsificação de soliçitações' -->

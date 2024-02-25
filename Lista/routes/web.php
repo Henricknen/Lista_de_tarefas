@@ -14,3 +14,6 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [HomeController::class, 'home']);     // rota açessa a raiz '/' do site será encaminhado para 'HomeController' para action 'home'
+Route::post('/', [HomeController::class, 'add']);       
+
+Route::get('/delete/{id}', [HomeController::class, 'del']);
