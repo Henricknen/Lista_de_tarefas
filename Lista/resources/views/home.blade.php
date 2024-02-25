@@ -17,3 +17,9 @@
     <input type = "text" name = "item" />
     <input type = "submit" value = "+" />
 </form>
+
+<hr>
+
+<footer>
+    <p>Copyright 2024 - by LUIS HENRIQUE S.F. <br/> 
+   </footer>
